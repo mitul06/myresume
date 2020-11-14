@@ -1,0 +1,44 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %} <title>Home {{ block.super }} </title> {% endblock title %}
+
+{% block content %}
+<div class="mt-4">
+    <div class="text-center">
+        <img src="{% static 'core/images/pic.JPG' %}" alt="ProfilePicture" class="img-thumbnail my-4" width="150px"
+            height="100px">
+    </div>
+    <div class="mt-4 text-white">
+        <h1 class="font-weight-bold font">Hello,</h1>
+    </div>
+    <div class="mx-5 text-justify px-5" style="line-height: 2rem;">
+        <p style="text-indent:100px;" class="text-white">
+            I am <b class="text-warning">Mitul Sartanpara</b>, I just statred <b class="text-warning">Jr. Software
+                Scienctist</b>
+            at <b class="text-warning">Valens Data Lab</b> Company. My Training Start in January 2020 and End will July 2020.
+
+        </p>
+        <p class="text-white">He has an outstanding academic record and thorough knowledge of
+            various school & college results.
+            With a born-talent of learning new skill Mitul is now seeking an opportunity to serve as Job.
+        </p>
+        <p class="text-white">
+            Knowledge of Computer skills, Knowledge of Computer Language Like, <b class="text-warning"> C, C++, MySQL,
+                Back-End (Java, Python, Django)</b>.
+            Ability to try new and learn, Dealing clients with polite and friendly. Provide clients with positive
+            feedback.
+            Use games in developing a healthy mind. Can resent complex topic in a simple and easy to understand manner
+            Knowledge of <b class="text-warning">Front-End (HTML, CSS, JavaScript, Bootstraps)</b>.
+        </p>
+        <p  class="text-white">
+            Hardworking, Strong computer skills, Polite and friendly
+        </p>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me !</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact Me</a>
+    </div>
+    
+</div>
+{% endblock content %}

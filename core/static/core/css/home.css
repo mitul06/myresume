@@ -1,0 +1,15 @@
+/* Font */
+.font{
+    font-family: 'Lobster Two', cursive;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container-fluid{
+    min-height: 100%;
+}
+
+
+

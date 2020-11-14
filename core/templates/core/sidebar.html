@@ -1,0 +1,20 @@
+{% load static %}
+
+{% block corecss %} 
+    <link rel="stylesheet" href="{% static 'core/css/sidebar.css' %}">
+{% endblock corecss %}
+
+<div class="border-right border-warning h-100">
+    <div class="text-center">
+        <img src="{% static 'core/images/pic.JPG' %}" alt="ProfilePicture" class="img-fluid rounded-circle mt-5"
+            width="80px" height="80px">
+        <h3 class="text-white mt-3 font">Mitul Sartanpara</h3>
+    </div>
+    <hr class="border-light">
+    <nav class="nav flex-column text-center">
+        <a href="{% url 'home' %}" class="nav-link {{ home }} mx-2">Home</a>
+        <a href="{% url 'serv' %}" class="nav-link {{ service }} mx-2">Services</a>
+        <a href="{% url 'skills' %}" class="nav-link {{ skill }} mx-2">Skills</a>
+        <a href="{% url 'contact' %}" class="nav-link {{ contact }} mx-2">Contact</a>
+    </nav>
+</div>

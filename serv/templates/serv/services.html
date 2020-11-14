@@ -1,0 +1,78 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %} <title>Services {{ block.super }} </title> {% endblock title %}
+
+
+{% block corecss %} {{ block.super }}
+<link rel="stylesheet" href="{% static 'serv/css/services.css' %}">
+{% endblock corecss %}
+
+{% block content %}
+<div class="mt-4 container">
+    <h1 class="text-warning mb-5 border-bottom">SERVICES</h1>
+
+    <div class="row text-white text-center mb-5">
+        <div class="col-sm-4">
+            <i class="fab fa-java fa-3x mb-3 i-color"></i>
+            <h3 class="main-title">Java Developer</h3>
+            <p class="ss-title">Core Java, Scala, Spring, JavaFx, using created Web Application.</p>
+        </div>
+
+        <div class="col-sm-4">
+            <i class="fab fa-python fa-3x mb-3 i-color"></i>
+            <h3 class="main-title">Python Developer</h3>
+            <p class="ss-title">Core Python, Tkinder using created Web Application.</p>
+        </div>
+
+        <div class="col-sm-4">
+            <i class="fas fa-code fa-3x mb-3 i-color"></i>
+            <h3 class="main-title">Web Developer</h3>
+            <p class="ss-title">HTML5, CSS3, JavaScript, JQuery using created Website.</p>
+        </div>
+    </div>
+
+    <div class="row text-white text-center mb-5">
+        <div class="col-sm-4">
+            <i class="fas fa-user-cog fa-3x mb-3 i-color"></i>
+            <h3 class="main-title">Machine Learning Engineer</h3>
+            <p class="ss-title">Python, R and Machine Learning Algorithm using created Model.</p>
+        </div>
+
+        <div class="col-sm-4">
+            <i class="fas fa-cogs fa-3x mb-3 i-color"></i>
+            <h3 class="main-title">Data Science</h3>
+            <p class="ss-title">Python, R and Machine Learning, Data Science Algorithm using created Model.</p>
+        </div>
+
+        <div class="col-sm-4">
+            <i class="fas fa-user-graduate fa-3x mb-3 i-color"></i>
+            <h3 class="main-title">Data Scienctist</h3>
+            <p class="ss-title">Python, R and Machine Learning Model, Data Science Concept.</p>
+        </div>
+    </div>
+
+    <div class="row text-white text-center mb-5">
+        <div class="col-sm-4">
+            <i class="fas fa-palette fa-3x mb-3 i-color"></i>
+            <h3 class="main-title">Web Design</h3>
+            <p class="ss-title">HTML5, CSS3, JavaScript using making awesome Templates.</p>
+        </div>
+
+        <div class="col-sm-4">
+            <i class="fab fa-js fa-3x mb-3 i-color"></i>
+            <h3 class="main-title">JavaScript Developer</h3>
+            <p class="ss-title">Core JavaScript, JQuery or HTML, CSS using created Website.</p>
+        </div>
+
+        <div class="col-sm-4">
+            <i class="fab fa-wordpress fa-3x mb-3 i-color"></i>
+            <h3 class="main-title">WordPress Developer</h3>
+            <p class="ss-title">Plugins, Templates, HTML, CSS, using created Website.</p>
+        </div>
+    </div>
+    
+
+</div>
+{% endblock content %}
